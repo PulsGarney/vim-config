@@ -1,0 +1,85 @@
+# 解决中文乱码,这个要按需配置
+defencoding utf8
+encoding utf8 utf8
+
+# 兼容shell 使得.bashrc .profile /etc/profile等里面的别名等设置生效
+shell -$SHELL
+
+#关闭screen的startup message
+startup_message off
+term linux
+
+# 解决无法滚动
+termcapinfo xterm|xterms|xs ti@:te=\E[2J
+
+# 屏幕缓冲区行数
+defscrollback 10000
+
+# 关闭闪屏
+vbell off
+
+# 重映射 Ctrl A
+# escape ^Mm
+
+# 下标签设置
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.wk}%-w%{.ck}%n %t%{-}%+w %=%{..G} %{..r} %d.%M.%Y %c"
+termcapinfo rxvt 'hs:ts=\E]2;:fs=\007:ds=\E]2;screen\007'
+termcapinfo xterm ti@:te@
+termcapinfo xterm 'hs:ts=\E]2;:fs=\007:ds=\E]2;screen\007'
+
+# 開啟256色模式
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+# 256 colors
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce on
+term screen-256color
+
+# mouse tracking allows to switch region focus by clicking
+mousetrack on
+
+# default windows
+screen -t Shell1        1 $SHELL
+screen -t Shell2        2 $SHELL
+# screen -t Vim           3 bash
+# screen -t Python        4 python
+bind c screen 1 # window numbering starts at 1 not 0
+select 1
+
+
+
+
+
+
+# layouts
+#layout autosave on
+#layout new one
+#select 1
+#layout new two
+#select 1
+#split -h
+#resize -v +8
+#focus down
+#select 2
+#focus up
+#layout new three
+#select 1
+#split
+#resize -v +7
+#focus down
+#select 3
+#split -v
+#resize -h +10
+#focus right
+#select 4
+#focus up
+
+#layout attach one
+#layout select one
+
+
+
+
+
