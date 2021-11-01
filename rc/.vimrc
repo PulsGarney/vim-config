@@ -106,23 +106,23 @@ set updatetime=200
 call plug#begin('~/.vim/plugged')
 
 " Function - Coc
-Plug 'git://github.com/neoclide/coc.nvim.git', {'branch': 'release'}
+Plug 'git@github.com:neoclide/coc.nvim.git', {'branch': 'release'}
 
 " Colour - Material
-Plug 'git://github.com/kaicataldo/material.vim.git', { 'branch': 'main' }
+Plug 'git@github.com:kaicataldo/material.vim.git', { 'branch': 'main' }
 
 " Git - Fugitive
-Plug 'git://github.com/tpope/vim-fugitive.git'
+Plug 'git@github.com:tpope/vim-fugitive.git'
 
 " Git - Gitgutter
-Plug 'git://github.com/airblade/vim-gitgutter.git'
+Plug 'git@github.com:airblade/vim-gitgutter.git'
 
 " Function - Multiple Cursors
-Plug 'git://github.com/terryma/vim-multiple-cursors.git'
+Plug 'git@github.com:terryma/vim-multiple-cursors.git'
 
 " Interface - Status Bar
-Plug 'git://github.com/vim-airline/vim-airline.git'
-Plug 'git://github.com/vim-airline/vim-airline-themes.git'
+Plug 'git@github.com:vim-airline/vim-airline.git'
+Plug 'git@github.com:vim-airline/vim-airline-themes.git'
 
 call plug#end()
 
