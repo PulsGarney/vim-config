@@ -7,3 +7,7 @@ Vim Config
 
 ## Usage
 
+```
+cd ~ && git clone git@github.com:PulsGarney/vim-config.git --recursive .vim
+cd ~/.vim && sh reload.sh
+```
