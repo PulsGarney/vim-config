@@ -7,9 +7,10 @@ alias random='py ~/.vim/bin/random_bytes.py'
 alias ip='curl cip.cc'
 alias pxo='proxy_on'
 alias pxf='proxy_off'
-alias pxr='proxy_run $*'
+alias pxr='proxy_run'
 alias f="fzf"
 alias bat="bat --theme ansi"
+alias colours="curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/ | bash"
 
 
 # FZF
@@ -49,4 +50,14 @@ function proxy_run() {
     proxy_off > /dev/null
 }
 
+# Enable other scripts accordingly
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    # Linux
+    . ./rc/.linuxrc
+
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    # MacOS
+    . ./rc/.macrc
+
+fi
 

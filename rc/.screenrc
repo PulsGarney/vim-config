@@ -30,15 +30,15 @@ termcapinfo xterm ti@:te@
 termcapinfo xterm 'hs:ts=\E]2;:fs=\007:ds=\E]2;screen\007'
 
 # 開啟256色模式
-termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+# termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 # 256 colors
-attrcolor b ".I"
-termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
-defbce on
+# attrcolor b ".I"
+# termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+# defbce on
 term screen-256color
 
 # mouse tracking allows to switch region focus by clicking
-mousetrack on
+# mousetrack on
 
 # default windows
 screen -t Shell1        1 $SHELL
@@ -47,10 +47,6 @@ screen -t Shell2        2 $SHELL
 # screen -t Python        4 python
 bind c screen 1 # window numbering starts at 1 not 0
 select 1
-
-
-
-
 
 
 # layouts
@@ -78,8 +74,5 @@ select 1
 
 #layout attach one
 #layout select one
-
-
-
 
 
