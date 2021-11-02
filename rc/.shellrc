@@ -1,3 +1,7 @@
+
+# Add this to ~/.zshrc
+# [[ ! -f ~/.vim/rc/.shellrc ]] || source ~/.vim/rc/.shellrc
+
 # Alias
 alias gl='git log --oneline --decorate --graph --all'
 alias py='python3'
@@ -15,6 +19,7 @@ alias colours="curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f
 
 
 # FZF
+bindkey "ç" fzf-cd-widget
 export FZF_COMPLETION_TRIGGER='**'
 
 

@@ -3,10 +3,6 @@ alias vi='/usr/local/bin/vi $*'
 alias vim='/usr/local/bin/vim $*'
 
 
-# FZF
-bindkey "ç" fzf-cd-widget
-
-
 # Python
 export PYTHON_HOME_=/Users/pulsgarney/Library/Python/3.8/bin
 export PATH=$PATH:$PYTHON_HOME_
