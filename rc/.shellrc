@@ -18,7 +18,7 @@ export FZF_COMPLETION_TRIGGER='**'
 
 
 # Command Line Proxy
-function proxy_off(){
+function proxy_off() {
         unset no_proxy
         unset http_proxy
         unset https_proxy
