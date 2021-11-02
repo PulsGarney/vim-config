@@ -9,6 +9,7 @@ alias pxo='proxy_on'
 alias pxf='proxy_off'
 alias pxr='proxy_run'
 alias f="fzf"
+alias tmux="tmux -2"
 alias bat="bat --theme ansi"
 alias colours="curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/ | bash"
 
@@ -53,11 +54,11 @@ function proxy_run() {
 # Enable other scripts accordingly
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     # Linux
-    . ./rc/.linuxrc
+    . ~/.vim/rc/.linuxrc
 
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # MacOS
-    . ./rc/.macrc
+    . ~/.vim/rc/.macrc
 
 fi
 
