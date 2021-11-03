@@ -2,7 +2,9 @@
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
   "prettier.bracketSpacing": false,
+
   "explorer.file.showHiddenFiles": true,
   "explorer.icon.enableNerdfont": true,
+
   "python.pythonPath": "python3.8"
 }
