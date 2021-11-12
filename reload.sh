@@ -3,6 +3,6 @@
 echo "System: $OSTYPE"
 
 cp ./rc/.vimrc ~/.vimrc
-cp ./rc/.screenrc ~/.screenrc
+cp ./rc/.tmux.conf ~/.tmux.conf
 
 echo "Reloaded!"
